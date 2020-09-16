@@ -1,7 +1,7 @@
 ---
 title: "Assignment 1"
 author: "Reuven Herzog"
-date: "9/11/2020"
+date: "9/15/2020"
 output: html_document
 ---
 
@@ -15,8 +15,8 @@ library(tidycensus)
 library(ggplot2)
 ```
 Selecting data for census tracts in the 5 most urbanized counties in northern New Jersey: Bergen, Passaic, Essex, Hudson, and Union.
-Selecting for urbanicity, majority race, percent renters, average household size, total population, and median age.
-```{r Select Data, echo=FALSE}
+Selecting for county, rurality/urbanity, majority race, percent renters, average household size, total population, and median age.
+```{r Select Data}
 counties <- c("Bergen","Passaic","Essex","Hudson","Union")
 vars <- c(tot_hh = "H001001",
            tot_rural_hh = "H002005",
@@ -48,38 +48,57 @@ NNJ_tracts <- get_decennial(geography = "tract", variables = vars,
             pct_rental, avg_hh_size, tot_pop, med_age) 
 ```
 
-## 1) Histogram of the percent of renters per tract:
-```{r histogram pct_rent, echo=FALSE}
+### 1) Histogram of the percent of renters per tract:
+```{r histogram pct_rent}
 ggplot(NNJ_tracts,aes(pct_rental))+
   geom_histogram(binwidth=0.033)
 ```
 
-## 2) 2-d scatter plot
-```{r scatter renter vs total, echo=FALSE}
+### 2) 2-d scatter plot
+```{r scatter renter vs total}
 ggplot(NNJ_tracts, 
        aes(x = tot_pop,
            y = pct_rental)) +
   geom_point() +
-  stat_smooth(color = "black", linetype = 2, size = 0.5) +
+  stat_smooth(color = "black", linetype = 2, size = 0.5, method = "lm") +
   scale_x_continuous(name = "Tract population") +
-  scale_y_continuous(name = "Share of Rental Households per Tract")
+  scale_y_continuous(name = "Share of Rental Households per Tract") +
+  theme_bw()
 ```
 
 (sometimes the correlation just isn't there)
 
 
-Maybe household size with rental percentage? And let's make it a log plot, just to test my comfort with that feature.
-```{r scatter renter vs household size, echo=FALSE}
+Maybe household size with rental percentage?
+```{r scatter renter vs household size}
+ggplot(NNJ_tracts, 
+       aes(x = avg_hh_size,
+           y = pct_rental)) +
+  geom_point() +
+  stat_smooth(color = "black", linetype = 2, size = 0.5) +
+  scale_x_continuous(name = "Average Household Size") +
+  scale_y_continuous(name = "Share of Rental Households per Tract") +
+  theme_classic()
+```
+
+OK, I'm pretty sure there isn't anything here, but let's make it a log plot, just to test my comfort with that feature.
+
+```{r scatter renter vs household size 2}
 ggplot(NNJ_tracts, 
        aes(x = avg_hh_size,
            y = pct_rental)) +
   geom_point() +
   stat_smooth(color = "black", linetype = 2, size = 0.5, method="lm") +
   scale_x_continuous(name = "Average Household Size") +
-  scale_y_continuous(name = "Share of Rental Households per Tract", trans = "log")
+  scale_y_continuous(name = "Share of Rental Households per Tract", trans = "log") +
+  theme_bw()
 ```
 
-```{r}
+OK, I think we're done looking for correlations here. Let's try something else.
+
+### 3) Still scatter plots, but data that actually shows something
+
+```{r rental/age-sort race}
 ggplot(NNJ_tracts, aes(x=pct_rental, y=med_age, color=majority_race_eth)) +
   geom_point() +
   stat_smooth(aes(group=1),method="lm", color="black") +
@@ -92,27 +111,40 @@ ggplot(NNJ_tracts, aes(x=pct_rental, y=med_age, color=majority_race_eth)) +
 ```
 
 And for a twist - let's now sort by county instead of race:
-```{r}
+```{r rental/age-sort county}
+
+corr <- cor(x=NNJ_tracts$pct_rental, y=NNJ_tracts$med_age, method = "pearson")
+
 ggplot(NNJ_tracts, aes(x=pct_rental, y=med_age, color=county)) +
   geom_point() +
   stat_smooth(aes(group=1),method="lm", color="black") +
   scale_x_continuous(name = "Share of Rental Households") +
   scale_y_continuous(name = "Median Age") +
-  scale_color_brewer(name = "County", palette = "Set1")
+  scale_color_brewer(name = "County", palette = "Set1") +
+  annotate("label", x = 0.92, y = 22, label = paste0("r = ", round(corr,4))) +
+  theme_bw()
 ```
 
+On the one hand, the strong correlation here makes sense. Young people cluster into rentals before they build enough capital to purchase a house. However, I may have thought that families with young children who move to suburban houses would bring down the median age there. Apparently this effect is not strong enough to make an impact. The racial breakdown is particularly interesting; we will get into this in later plots.
 
-```{r size color madness, echo = FALSE}
+
+### 4) And now for something completely different...
+
+```{r size color madness}
 ggplot(NNJ_tracts,aes(x = 0, y=0, color = med_age,size = tot_pop)) +
   geom_jitter() +
-  scale_color_gradient(low = "green", high = "red") + 
+  scale_color_gradient(low = "green", high = "red", name = "Median Age") + 
   scale_x_continuous(name = "", labels = NULL, breaks = NULL) + 
-  scale_y_continuous(name = "", labels = NULL, breaks = NULL)
+  scale_y_continuous(name = "", labels = NULL, breaks = NULL) +
+  scale_size_continuous(name = "Tract Population") +
+  theme_bw()
 ```
 
-OK this not only makes no sense, it's not really readable...
+OK this not only makes no sense, it's not really readable. It seems like the tract population doesn't vary enough to be obviously visible with this many points. Also I couldn't figure out how to jitter all the points far enough away from each other.
 
-```{r aggregate, echo = FALSE}
+### 5) Technically not a pie chart
+
+```{r aggregate}
 v_01 <- aggregate(x = NNJ_tracts$tot_pop,
                   by = list(NNJ_tracts$majority_race_eth), FUN = sum) %>%
   rename(majority_race_eth = Group.1, tot_pop = x)
@@ -120,14 +152,19 @@ v_02 <- aggregate(x = NNJ_tracts$pct_rental,
                   by = list(NNJ_tracts$majority_race_eth), FUN = mean) %>%
   rename(majority_race_eth = Group.1, pct_rental = x)
 summary <- merge(v_01,v_02,by = "majority_race_eth")
-ggplot(summary, aes(x = majority_race_eth, y = pct_rental, fill = tot_pop)) +
+
+ggplot(summary, aes(x = majority_race_eth, y = 1 - pct_rental, fill = tot_pop)) +
          geom_col(width = 1) + coord_polar() +
   scale_x_discrete(name = "Majority race/ethnicity", labels = c("Hispanic", "Asian", "Black", "White", "No majority")) +
-  scale_y_continuous(name = "Share of Rental Households") +
-  scale_fill_continuous(name = "Total Population")
+  scale_y_continuous(name = "Share of Homeowner Households") +
+  scale_fill_continuous(name = "Total Population", low = "lightblue", high = "darkblue") +
+  theme_bw()
 ```
-# Finally, a plot that is useful
-```{r renters by county, echo=FALSE}
+
+This plot is intriguing, and begins our exploration into the connection between race and homeownership. The statistics here aren't ironclad - I took a straight mean of each majority tract, instead of (1) a weighted average by population, (2) aggregating on a person-level, instead of on a neighborhood level. But it's a decent start. I don't think the pie chart here is more useful than a bar chart, especially since the width of each slice is identical.
+
+### 6) Finally, a plot that is useful
+```{r renters by county}
 county_violin <- ggplot(NNJ_tracts,aes(x = reorder(county, -1*pct_rental), y = pct_rental)) +
   geom_violin(aes(fill=county, color=county),show.legend=FALSE) +
   scale_x_discrete(name=NULL) +
@@ -137,16 +174,17 @@ county_violin
 
 This plot is very instructional. Both Hudson and Essex counties are highly urbanized, focused on Jersey City and Newark, respectively. It therefore makes sense that their share of rental households is above 50%. But Hudson is small enough to hardly include any non-urbanized tracts, whereas Essex includes less urban and suburban areas. Particularly interesting is Passaic County, whose southern section is composed of dense cities like Paterson and Passaic, with a relatively poor population - and thus many renters. However, its northern component is closer to rural, and it has many suburban single-family areas as well. Bergen similarly has two concentrations - one in mostly rental neighborhoods (though at a lower concentration than even Passaic), and a much larger bump of tracts with hardly any rental households.
 
-##Violin plot with a box plot overlay
-```{r}
-county_violin + geom_boxplot(width = 0.075)
+### Violin plot with a box plot overlay
+```{r violin plus boxplot}
+county_violin + geom_boxplot(width = 0.075) +
+  theme_bw()
 ```
 
 This diagram shows how boxplots often can hide the whole story, and in this case, I don't think it adds much beyond the violin plot.
 
 
-#County rental rates - adding in ethnicity
-```{r}
+### 7) County rental rates - adding in ethnicity
+```{r county household race}
 ggplot(NNJ_tracts,aes(x = reorder(county, -1*pct_rental), y = pct_rental, color = majority_race_eth)) +
   geom_jitter(width = 0.3) +
   scale_x_discrete(name=NULL) +
@@ -159,7 +197,7 @@ ggplot(NNJ_tracts,aes(x = reorder(county, -1*pct_rental), y = pct_rental, color 
 
 This graph is particularly interesting. For one thing, I didn't realize that the Black community was so concentrated in Essex county, to the exclusion of other counties. (For one thing, Paterson and Passaic, in Passaic County, have large Black populations, but apparently not many majority tracts.) More damning is that nearly all majority-home-owner districts are majority-white.
 
-```{r}
+```{r minority homeownership}
 ggplot(filter(NNJ_tracts,pct_rental<0.5),aes(x = reorder(county, -1*pct_rental), y = pct_rental, color = majority_race_eth)) +
   geom_jitter(width = 0.35) +
   scale_x_discrete(name=NULL) +
@@ -172,4 +210,4 @@ ggplot(filter(NNJ_tracts,pct_rental<0.5),aes(x = reorder(county, -1*pct_rental),
   ggtitle("Majority Homeowner, Majority Non-White")
 ```
 
-(I'm not sure if it's worth including the majority-rental tracts or not...)
+The point of this plot is to highlight majority-homeowner, majority-minority tracts, against the background of all majority-homeowner tracts. I'm not sure if it's worth including the majority-rental tracts or not - but also not certain how to include those either.
