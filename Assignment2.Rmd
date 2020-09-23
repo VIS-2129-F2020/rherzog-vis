@@ -1,0 +1,221 @@
+---
+title: "Assignment 2"
+author: "Reuven Herzog"
+date: "9/21/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load libraries, message = FALSE}
+library(ggplot2)
+library(sf)
+library(rnaturalearth)
+library(tidyverse)
+library(ggspatial)
+library(cartogram)
+library(ggthemes)
+```
+
+```{r world map}
+world <- ne_countries(scale = 50, returnclass = "sf") 
+
+world_map <- ggplot(world) +
+  geom_sf() +
+  theme_bw()
+
+world_map
+```
+
+## Wading into The Comments Section
+Alright, now that we've got the boring map out of the way, let's look for something more interesting...
+
+```{r why not a little controversy}
+lets_try_something <- ne_states(country = "Israel", returnclass = "sf")
+ggplot(lets_try_something) +
+  geom_sf() + theme_bw() +
+  ggtitle("Israel Subdivisions")
+```
+
+Okay. I'll just note that this data does not include the West Bank or Gaza, and it's hard to tell but may not include East Jerusalem -  but it does include the Golan Heights. Not only that, it includes the UNDOF territory between Israel and Syria that Israel doesn't even claim! So far, so weird.
+
+```{r some more controversy 2}
+ggplot(ne_countries(country="Palestine", returnclass = "sf", scale = 10)) +
+  geom_sf() + theme_bw() +
+  ggtitle("Palestine Borders")
+```
+```{r some more controversy 3}
+try({ggplot(ne_states(country="Palestine", returnclass = "sf")) + geom_sf()})
+```
+
+The dataset includes Palestine as an independent country, but doesn't include it in the dataset of internal country divisions? This is getting weirder.
+
+And to check that ne_states() should include all countries, regardless of whether they have internal subdivisions or not, let's try Monaco.
+
+```{r Monaco}
+ggplot(ne_states(country = "Monaco", returnclass = "sf")) + geom_sf() + theme_bw() +
+  ggtitle("Monaco Subdivisions")
+```
+
+At this point, I can only conclude that the party managing the Natural Earth data is very confused.
+Let's now move on to countries that are actually large enough for projections to matter.
+
+## America, but with Moose and Healthcare
+
+```{r load Canada}
+CA_data <- ne_states(country = "Canada", returnclass = "sf")
+CA_map <- ggplot(CA_data) + geom_sf() + theme_bw()
+CA_map
+```
+Ew ew ew ew ew.
+Now for some projections!
+
+First up, worst up:
+```{r Mercator}
+mercator_proj <- "+proj=merc +lon_0=0 +k=1 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
+
+CA_map + coord_sf(crs = mercator_proj) + ggtitle("Mercator (SR-ORG #16)")
+```
+This uses the Mercator(World) projection, SR-ORG #16.
+At least the lower provinces look normal, even if Ellesmere Island looks like a full continent.
+
+
+```{r Toronto}
+tor_proj <- "+proj=tmerc +lat_0=0 +lon_0=-79.5 +k=0.9999 +x_0=304800 +y_0=0 +ellps=clrk66 +units=m +no_defs"
+
+CA_map + coord_sf(crs = tor_proj) + ggtitle("Toronto (SR-ORG #8012)")
+```
+
+I mean, we all know that Toronto is the only thing in Canada that matters anyway...
+At least in this projection the relative sizes look better.
+
+
+```{r normal Canada}
+stats_ca <- "+proj=lcc +lat_1=49 +lat_2=77 +lat_0=63.390675 +lon_0=-91.86666666666666 +x_0=6200000 +y_0=3000000 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
+CA_map_std <- CA_map + coord_sf(crs = stats_ca)
+CA_map_std + ggtitle("Statistics Canada Projection") + annotation_scale()
+```
+This is likely the one to settle on, but for now let's play with other projections.
+
+
+```{r Yukon}
+yukon_proj <- "+proj=aea +lat_1=61.66666666667 +lat_2=68 +lat_0=59 +lon_0=-132.5 +x_0=500000 +y_0=500000 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
+CA_map + coord_sf(crs = yukon_proj) + ggtitle("Yukon Albers (SR-ORG #40)")
+```
+The northern provinces here are definitely enlarged, but distortion is minimal.
+Let's try to get one bit crazier:
+
+```{r South Africa}
+sa <- "+proj=laea +lat_0=-10 +lon_0=35 +x_0=0 +y_0=0 +ellps=WGS84 +units=m +no_defs"
+CA_map + coord_sf(crs = sa) + ggtitle("South Africa Lambert (SR-ORG #8225)")
+```
+Now THAT is some beautiful distortion!
+
+# Part 2 - Maps with GDP Data
+
+Let's start by loading up our GDP and population data (from Statistics Canada)
+
+```{r adding data, message = FALSE}
+ca_pop <- read_csv("C:/Users/Reuven/OneDrive - Harvard University/Fall 2020/VIS/Canada population.csv")
+ca_GDP <- read_csv("C:/Users/Reuven/OneDrive - Harvard University/Fall 2020/VIS/Canada GDP.csv") %>%
+  mutate(VALUE = VALUE*1000000)
+ca_GDP_data <- CA_data %>%
+  left_join(ca_pop, by = c("gn_name" = "GEO")) %>%
+  rename("Population" = "VALUE") %>%
+  left_join(ca_GDP, by = c("gn_name" = "GEO")) %>%
+  rename("GDP" = "VALUE") %>%
+  mutate("GDP Per Capita" = GDP / Population) %>%
+  select("name", "GDP", "Population", "GDP Per Capita")
+```
+
+
+```{r GDP chloropeth}
+ggplot(ca_GDP_data, aes(fill = GDP)) +
+  geom_sf() + coord_sf(crs = stats_ca) +
+  scale_fill_viridis_c()
+```
+
+And a continuous cartogram, based on population:
+```{r GDP cont cartogram, message= FALSE}
+ca_transformed <- st_transform(x = ca_GDP_data, crs = stats_ca)
+ca_GDP_cartogram <- ca_transformed %>%
+  cartogram_cont(weight = "Population")
+ggplot(ca_GDP_cartogram, aes(fill = GDP)) +
+  geom_sf() +
+  scale_fill_viridis_c() +
+  theme_bw()
+```
+
+```{r GDP ncont cartogram}
+ca_transformed <- st_transform(x = ca_GDP_data, crs = stats_ca)
+ca_GDP_ncartogram <- ca_transformed %>%
+  cartogram_ncont(weight = "Population")
+ggplot(ca_GDP_ncartogram, aes(fill = GDP)) +
+  geom_sf() +
+  scale_fill_viridis_c() +
+  theme_bw()
+```
+We can abstract this more to a Dorling cartogram.
+
+```{r GDP dorling}
+ca_GDP_dorling <- ca_transformed %>%
+  cartogram_dorling(weight = "Population")
+ggplot(ca_GDP_dorling, aes(fill = GDP)) +
+  geom_sf() +
+  scale_fill_viridis_c() +
+  theme_bw()
+```
+
+OK, the non-continuous one is probably harder to read, because the teeny population states are all so far apart.
+
+## Per capita data
+
+We can also look at GDP per capita, and different ways to represent this:
+
+```{r GDP per capita}
+
+ggplot(ca_transformed, aes(fill = `GDP Per Capita`)) +
+  geom_sf() + scale_fill_viridis_c() + theme_bw()
+
+```
+
+Well that was unexpected. I guess I should have looked at the data first if I didn't want to be surprised. The northern provinces and territories, along with the prairie provinces, have a greater GDP per capita. I suspect this is partially a function of such low population combined with various high-income, mining industries.
+
+```{r GDP per capita cartogram, message = FALSE}
+ggplot(ca_GDP_cartogram, aes(fill = `GDP Per Capita`)) +
+  geom_sf() +
+  scale_fill_viridis_c() +
+  theme_bw() +
+  ggtitle("Weighted by Population")
+```
+
+I'm curious what happens if we weigh the cartogram on GDP instead of population. I actually think it will not change much for the map of GDP per capita:
+
+
+```{r cont cartogram GDP, message = FALSE}
+ggplot(cartogram_cont(x = ca_transformed, weight = "GDP"), aes(fill = `GDP Per Capita`)) +
+  geom_sf() +
+  scale_fill_viridis_c() +
+  theme_bw() +
+  ggtitle("Weighted by Absolute GDP")
+```
+
+Welp, I was wrong. I guess this makes sense: Since the northern territories have so many fewer people than the southern provinces, their higher GDP per capita isn't significantly higher enough to counteract the absolute number difference.
+
+
+## Our old friend
+
+Lastly, we cannot forget about non-geographic charts:
+
+```{r pie chart}
+ca_GDP_data$name <- factor(ca_GDP_data$name, levels = ca_GDP_data$name[order(-ca_GDP_data$Population)])
+ggplot(ca_GDP_data, aes(y = `Population`, x = `name`, fill = `GDP Per Capita`)) +
+  geom_bar(position = position_dodge(), stat = "identity") +
+  scale_x_discrete(name = NULL) +
+  scale_fill_viridis_c() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+```
+
