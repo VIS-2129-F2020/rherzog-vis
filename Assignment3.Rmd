@@ -1,0 +1,247 @@
+---
+title: "Assignment 3"
+author: "Reuven Herzog"
+date: "9/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message=FALSE}
+library(sf)
+library(tidyverse)
+library(ggthemes)
+library(ggspatial)
+library(units)
+library(nngeo)
+library(dplyr)
+library(utf8)
+library(tibble)
+locale("he")
+```
+
+# Tel Aviv Data
+## Intro
+I'm exploring some data about the city of Tel Aviv. Tel Aviv is the cultural and economic capital of Israel. It is also the hub of the non-traditionally Jewish lifestyles in Israel. I had been hoping to explore data from the classically Jewish (e.g. synagogues) and the modern, "Tel Avivi" sides (e.g. yoga studios). Unfortunately, the municipal data wasn't so conducive to that quest, so this will be not as thematically perfect, but still interesting.
+
+Loading data from the Tel Aviv municipality's open data portal. Layer codes obtained here: "https://opendata.tel-aviv.gov.il/OpenData_Ducaments/%D7%9E%D7%90%D7%92%D7%A8%D7%99%20%D7%9E%D7%99%D7%93%D7%A2%20GIS.pdf"
+1) Neighborhoods, polygon data
+2) Parks and green space, polygon data
+3) Synagogues, point data
+4) Art galleries, point data
+
+```{r load data}
+get_TLVData <- function(code) {
+    url = paste0("https://gisn.tel-aviv.gov.il/GisOpenData/service.asmx/GetLayer?layerCode=",code,"&layerWhere=&xmin=&ymin=&xmax=&ymax=&projection=")
+    return(st_read(url, quiet = TRUE))
+}
+
+shuls <- get_TLVData(568)
+neighborhoods <- get_TLVData(511) %>%
+  left_join(read.csv(file = "C:/Users/Reuven/OneDrive - Harvard University/Fall 2020/VIS/TLV neighborhoods with english.csv"), by = 'oid_shchuna')
+parks <- get_TLVData(551)
+galleries <- get_TLVData(601)
+```
+
+
+
+Let's start by visualizing the Tel Aviv neighborhoods, and each of these sets on their own, before we get to analysis.
+
+```{r intro map}
+ggplot(neighborhoods) +
+  geom_sf() +
+  geom_sf_text(label = neighborhoods$shem_shchuna, size = 1) +
+  theme_map()
+```
+
+
+```{r first combined map}
+ggplot(parks) +
+  geom_sf(fill = "darkgreen", color = NA) +
+  geom_sf(data = shuls, color = "blue4", size = 0.01) +
+  geom_sf(data = galleries, color = "darkorange", size = 0.01) +
+  geom_sf(data= neighborhoods, fill = NA, color = "gray") +
+  scale_color_discrete() +
+  theme_map() +
+  annotation_scale() +
+  annotation_north_arrow(location = "tl", style = north_arrow_minimal())
+```
+
+I can't figure out why a legend isn't appearing...
+
+## Simple Point-in-Polygon Analysis
+
+Let's make a table with each neighborhood's name and how many synagogues and art galleries are in it.
+
+```{r points-in-neighborhoods}
+shul_covers = st_covers(neighborhoods, shuls)
+neighborhoods <- neighborhoods %>%
+  mutate(num_shuls = lengths(shul_covers))
+
+art_covers = st_covers(neighborhoods, galleries)
+neighborhoods <- neighborhoods %>%
+  mutate(num_art = lengths(art_covers))
+```
+
+```{r p-i-n 2}
+tidy_table <- select(neighborhoods, eng_name, num_shuls, num_art)
+st_geometry(tidy_table) = NULL
+tidy_table
+```
+
+(For later - figure out how to get this to print Hebrew characters instead of the unicode numbers
+Edit: I gave up and translated the neighborhood names to English)
+
+```{r shuls}
+ggplot(neighborhoods) +
+  geom_sf(color = NA, 
+          aes(fill = num_shuls)) +
+  scale_fill_viridis_c(name = "Tel Aviv neighborhoods\nby number of synagogues") +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tl") +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray")) +
+  theme(legend.position = "right")
+```
+
+```{r art}
+ggplot(neighborhoods) +
+  geom_sf(color = NA, 
+          aes(fill = num_art)) +
+  scale_fill_viridis_c(name = "Tel Aviv neighborhoods\nby number of art galleries") +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tl") +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray")) +
+  theme(legend.position = "right")
+```
+
+Note that these two graphs are scaled relative to themselves: They show concentrations in different neighborhoods, but in general the number of synagogues in an area is greater than the number of art galleries. Note the greater concentration of synagogues in the southern and eastern neighborhoods, and the much higher concentration of galleries in the old center of Tel Aviv.
+
+We will now compare these two more directly:
+
+## Comparative Maps
+```{r absolute comparison}
+neighborhoods <- neighborhoods %>%
+  mutate(diff = num_shuls - num_art, pct_diff = num_shuls / (num_shuls + num_art))
+
+ggplot(neighborhoods) +
+  geom_sf(color = NA, 
+          aes(fill = diff)) +
+  scale_fill_viridis_c(name = "# More Synagogues than Art Galleries") +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tl") +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray")) +
+  theme(legend.position = "right")
+```
+
+```{r absolute comparison}
+neighborhoods <- neighborhoods %>%
+  mutate(diff = num_shuls - num_art, pct_diff = num_shuls / (num_shuls + num_art))
+
+ggplot(neighborhoods) +
+  geom_sf(color = NA, 
+          aes(fill = pct_diff)) +
+  scale_fill_viridis_c(name = "Pct of Synagogues") +
+  annotation_scale(location = "br") +
+  annotation_north_arrow(location = "tl") +
+theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray")) +
+  theme(legend.position = "right")
+```
+
+I need to find better palettes to illustrate this more clearly. But the second map is particularly telling that synagogues tend to dominate art galleries, except in the central neighborhoods - and even then they generally outnumber them.
+At large this makes sense - there are 481 synagogues in the city, to 71 galleries. Given this, where galleries even challenge synagogues makes a statement about the character of the neighborhood. There are a very few neighborhoods where galleries even outnumber synagogues:
+
+```{r}
+neighborhoods <- neighborhoods %>%
+  mutate(more_art = diff < 0)
+heathenlands <- neighborhoods[neighborhoods$more_art == TRUE,] %>%
+  select(eng_name, num_shuls, num_art, diff)
+st_geometry(heathenlands) = NULL
+heathenlands
+```
+
+
+## Parks and Green Space
+
+Let's start by wondering if there are any synagogues or art galleries inside of parklands.
+
+```{r}
+parks <- parks %>%
+  mutate(num_shuls = lengths(st_covers(parks, shuls)),
+         num_art = lengths(st_covers(parks, galleries)),
+         has_shuls = num_shuls > 0, has_art = num_art > 0)
+paste0("Number of parks that contain synagogues: ",sum(parks$has_shuls))
+paste0("Proportion of all parks: ",sum(parks$has_shuls)/length(parks$oid_shetach)*100,"%")
+paste0("Number of parks that contain art galleries: ",sum(parks$has_art))
+```
+
+OK, now that we know 14 of the 1000 green spaces contain synagogues, let's see where they are.
+
+```{r shuls in a park}
+park_with_shul <- parks[parks$has_shuls == TRUE,]
+
+ggplot(park_with_shul) +
+  geom_sf(fill = 'darkgreen', color = NA) +
+  geom_sf(data = neighborhoods, color = "darkgray", fill = NA) +
+  theme_map()
+```
+
+We can see from this map that all the "parks" are more appropriately described as small green spaces, or gardens. (If I printed the chart with the "type of park" column this would be explicit, but I don't want to deal with more Hebrew text issues right now.)
+
+## A Prayer and a Painting
+
+How many synagogues are within 100 meters of any art gallery?
+
+```{r}
+art_buffer <- st_buffer(galleries, dist = 200) %>% st_union()
+ggplot(art_buffer) +
+  geom_sf() +
+  theme_map()
+```
+
+```{r}
+syn_art <- shuls[art_buffer,]
+
+ggplot(syn_art) +
+  geom_sf() +
+  geom_sf(data = neighborhoods, fill = NA) +
+  theme_map()
+```
+
+```{r}
+paste("Number of synagogues within 200 m of an art gallery:", length(syn_art$name_bet_cneset))
+```
+
+# Polygon-in-Polygon
+## Or: Finally, some actual programming
+
+How much parkland in each neighborhood, absolutely and as a percentage of its area.
+
+```{r}
+nhp <- neighborhoods[1,]
+nhp = nhp[c("oid_shchuna", "eng_name")]
+temp_park <- parks[nhp,]
+nhp = mutate(nhp, park_area = as.numeric(sum(temp_park$ms_area)))
+st_geometry(nhp) = NULL
+  
+for(row in 2:nrow(neighborhoods)) {
+  temp <- neighborhoods[row,]
+  temp = temp[c("oid_shchuna","eng_name")]
+  temp_park <- parks[temp,]
+  temp = mutate(temp, park_area = as.numeric(sum(temp_park$ms_area)))
+  st_geometry(temp) = NULL
+  rbind(nhp, c(temp$oid_shchuna, temp$eng_name, temp$park_area))
+}
+
+# goal is once the full nhp table is built - with 71 rows for 71 neighborhoods, then to do a join with "neighborhoods."
+```
+
