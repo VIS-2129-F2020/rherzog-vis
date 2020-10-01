@@ -40,7 +40,7 @@ get_TLVData <- function(code) {
 
 shuls <- get_TLVData(568)
 neighborhoods <- get_TLVData(511) %>%
-  left_join(read.csv(file = "C:/Users/Reuven/OneDrive - Harvard University/Fall 2020/VIS/TLV neighborhoods with english.csv"), by = 'oid_shchuna')
+  left_join(read.csv(file = "TLV neighborhoods with english.csv"), by = 'oid_shchuna')
 parks <- get_TLVData(551)
 galleries <- get_TLVData(601)
 ```
