@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r, message=FALSE}
+```{r, message=FALSE, include = FALSE, echo = TRUE}
 library(sf)
 library(tidyverse)
 library(ggthemes)
@@ -91,7 +91,7 @@ st_geometry(tidy_table) = NULL
 tidy_table
 ```
 
-(For later - figure out how to get this to print Hebrew characters instead of the unicode numbers
+(For later - figure out how to get this to print Hebrew characters instead of the unicode numbers.\n
 Edit: I gave up and translated the neighborhood names to English)
 
 ```{r shuls}
@@ -141,7 +141,7 @@ theme_map() +
   theme(legend.position = "right")
 ```
 
-```{r absolute comparison}
+```{r relative comparison}
 neighborhoods <- neighborhoods %>%
   mutate(diff = num_shuls - num_art, pct_diff = num_shuls / (num_shuls + num_art))
 
@@ -192,6 +192,8 @@ park_with_shul <- parks[parks$has_shuls == TRUE,]
 ggplot(park_with_shul) +
   geom_sf(fill = 'darkgreen', color = NA) +
   geom_sf(data = neighborhoods, color = "darkgray", fill = NA) +
+  annotation_north_arrow(location = 'tl') +
+  annotation_scale(location = 'br') +
   theme_map()
 ```
 
@@ -208,12 +210,16 @@ ggplot(art_buffer) +
   theme_map()
 ```
 
+Honestly, this is some pretty good abstract art!
+
 ```{r}
 syn_art <- shuls[art_buffer,]
 
 ggplot(syn_art) +
   geom_sf() +
   geom_sf(data = neighborhoods, fill = NA) +
+  annotation_north_arrow(location = 'tl') +
+  annotation_scale(location = 'br') +
   theme_map()
 ```
 
@@ -222,26 +228,59 @@ paste("Number of synagogues within 200 m of an art gallery:", length(syn_art$nam
 ```
 
 # Polygon-in-Polygon
-## Or: Finally, some actual programming
 
-How much parkland in each neighborhood, absolutely and as a percentage of its area.
 
-```{r}
-nhp <- neighborhoods[1,]
-nhp = nhp[c("oid_shchuna", "eng_name")]
-temp_park <- parks[nhp,]
-nhp = mutate(nhp, park_area = as.numeric(sum(temp_park$ms_area)))
-st_geometry(nhp) = NULL
-  
-for(row in 2:nrow(neighborhoods)) {
-  temp <- neighborhoods[row,]
-  temp = temp[c("oid_shchuna","eng_name")]
-  temp_park <- parks[temp,]
-  temp = mutate(temp, park_area = as.numeric(sum(temp_park$ms_area)))
-  st_geometry(temp) = NULL
-  rbind(nhp, c(temp$oid_shchuna, temp$eng_name, temp$park_area))
-}
+```{r aggregate parks by neighborhood}
+# remove duplicate parks
+parks_unique <- st_difference(parks)
 
-# goal is once the full nhp table is built - with 71 rows for 71 neighborhoods, then to do a join with "neighborhoods."
+parks_nhood <- parks_unique %>%
+  st_join(neighborhoods) %>%
+  select(ms_area, oid_shchuna, eng_name)
+
+st_geometry(parks_nhood) <- NULL
+
+parks_nhood <- parks_nhood %>%
+  group_by(eng_name) %>%
+  summarise(park_area = sum(ms_area))
+
+neighborhoods <- neighborhoods %>%
+  left_join(parks_nhood) %>%
+  mutate(park_area = ifelse(is.na(park_area), 0, park_area)) %>%
+  mutate(park_area_km2 = park_area/1000000)
+
 ```
 
+```{r}
+ggplot(neighborhoods, aes(fill = park_area_km2)) +
+  geom_sf() +
+  scale_fill_continuous(low = "white", high = "darkgreen", name = "Total Green Space\nby Neighborhood (km^2)") +
+  annotation_north_arrow(location = 'tl') +
+  annotation_scale(location = 'br') +
+  theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray")) +
+  theme(legend.position = "right")
+```
+
+OK, so this is ... somewhat helpful. The problem is that a full neighborhood is devoted to Yarkon Park - which dominates the scale.
+
+```{r}
+park_plot <- ggplot(neighborhoods, aes(fill = park_area_km2)) +
+  geom_sf() +
+  scale_fill_gradient(low = "white", high = "forestgreen", name = "Total Green Space by\nInhabited Neighborhood (km^2)", limits = c(0,0.25)) +
+  annotation_north_arrow(location = 'tl') +
+  annotation_scale(location = 'br') +
+  theme_map() +
+  theme(legend.background = element_rect(fill = alpha("white", 0.5), 
+                                         color = "gray")) +
+  theme(legend.position = "right") +
+  annotate(geom = "label",
+           x = st_bbox(neighborhoods)$xmax - 8000, y = st_bbox(neighborhoods)$ymax - 1250,
+           label = "HaYarkon Park, with 1.5 km^2 of\ngreen space, is in grey, to not\noverwhelm the other data variations",
+           alpha = 0.5,
+           hjust = 0, vjust = 0, size = 3)
+park_plot
+```
+
+We can see here that the neighborhoods with the most green space are the ones immediately to the south of HaYarkon Park. Perhaps this is area near the river, but not technically included in the park polygon. There is also a clear cluster, though not as pronounced as near the park, of the old planned city (south of Yarkon Park, western part of the city), which was planned to have frequent boulevards and open squares.
