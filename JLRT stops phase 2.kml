@@ -1,0 +1,6494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+<Document id="JLRT_stops_phase2">
+  <name>JLRT_stops_phase2</name>
+  <snippet></snippet>
+  <description><![CDATA[JLRT_stops_phase2]]></description>
+  <Folder id="FeatureLayer0">
+    <name>JLRT_stops_phase2</name>
+    <snippet></snippet>
+    <description><![CDATA[JLRT_stops_phase2]]></description>
+    <Placemark id="ID_00000">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>המור</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20036985371032,31.73232567545092,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00001">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>דב יוסף</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19588927428807,31.73281822163628,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00002">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שמואל מאיר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21116904479223,31.73743948422749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00003">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גבעת המטוס</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21311556339266,31.74054405842532,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00004">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>ברעם</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21661285164912,31.74539985200838,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00005">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מודעי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18789234453895,31.74872781995865,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00006">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גטי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18534028269313,31.74928064882161,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00007">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>התנופה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21912227065666,31.75066654907267,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00008">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>פת</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20256843712707,31.7512662104156,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00009">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>ארנה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19265571952233,31.75166537702147,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00010">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>תלפיות</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20747140928184,31.752354606998,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00011">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גוננים</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19899248050159,31.75239693532291,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00012">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>אגודת ביתר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18804244032901,31.75284250149927,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00013">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>עין גדי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.2209287929239,31.75459854872327,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00014">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>אסתר המלכה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.2230074119182,31.75823891107601,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00015">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>אורנים</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21456556023006,31.75886649559808,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00016">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>דרך חברון</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22459136070484,31.76140658584713,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00017">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>רחל אמנו</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21972538512585,31.76375385661075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00018">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>החאן</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22416127201633,31.76856620501059,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00019">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>כיכר פלומר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22115325223189,31.77254267650641,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00020">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>כיכר צרפת</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21729386253015,31.77574844644598,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00021">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שמואל הנגיד</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21581624661686,31.77875767019121,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00022">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יפו מרכז</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21715785141531,31.78240187931467,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00023">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הר חוצבים</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21039998272606,31.79970768512221,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00024">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הרטום</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21451800545385,31.80003235608593,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00025">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יגאל ידין</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20395469216267,31.80771668182193,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00026">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>טרומן</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19938735961087,31.81258343663571,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00027">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>רמות מרכז</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19460695409995,31.81837375495962,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00028">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>רמות אינטרמודל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18898275256933,31.82409417014379,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00029">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מאה שערים</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21869655645173,31.78727228909808,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00030">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>צפניה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22084028731958,31.79243451425088,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00031">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בר אילן</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21903377428456,31.7965503753784,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00032">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>המלמד</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18133775241346,31.78727804317681,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00033">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>האופה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18505200066478,31.78763073575979,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00034">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בי"ח הדסה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.14755351555662,31.76486358115663,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00035">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>זנגביל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.17853749470326,31.7685743181105,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00036">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>טהון</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.1716592226904,31.76211554130783,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00037">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בי"ח הדסה - בי"ס ל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.15116375545106,31.7640231971142,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00038">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>אזולאי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.1889205935132,31.78759835427536,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00039">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>העילוי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19574648552754,31.78758709577987,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00040">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הר הרצל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.1815175312643,31.77084735176264,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00041">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יפה נוף</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18484098741542,31.77685461603945,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00042">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>כיכר דניה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18828678481024,31.78059824414301,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00043">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>החלוץ</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19144128127153,31.78278769637285,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00044">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הדויד'קה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21505193852709,31.78467543498828,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00045">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יפו מרכז</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21815396171985,31.78297544340419,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00046">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>עירייה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22396984035865,31.77961244478751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00047">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שער שכם</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22784470333188,31.78241958056724,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00048">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>קרית משה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19831721553102,31.78639690213166,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00049">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>התחנה המרכזית</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20254817971623,31.78846504482421,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00050">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הטורים</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20695146752089,31.78781092504844,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00051">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מחנה יהודה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21151994856859,31.78595349917591,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00052">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שבטי ישראל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22712842520632,31.78630348168853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00053">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שמעון הצדיק</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22633234656615,31.79306254453858,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00054">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גבעת התחמושת</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23201871189644,31.79883154267111,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00055">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שועפאט</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.2299152560545,31.81428508572613,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00056">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>א-סהל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23281613945954,31.81111713378846,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00057">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גבעת המיבתר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23461587954684,31.80548429297011,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00058">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בית חנינא</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22908743521428,31.81977535878865,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00059">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>פסגת זאב מרכז</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23761314898709,31.8237050556452,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00060">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יקותיאל אדם</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23924543015964,31.81936092225087,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00061">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>סיירת דוכיפת</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.24025732675434,31.8260570423874,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00062">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>חיל האוויר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>קיימת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23855238050116,31.82888998744283,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00063">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מזל קשת</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23416100636597,31.83750982457092,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00064">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מזל שור</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23465403112873,31.83393412212202,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00065">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>טבנקין</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.2372567117848,31.83812988660438,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00066">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>לאה גולדברג</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.24021262065225,31.84239763532761,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00067">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>חביב</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.17439145626157,31.7671971942466,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00068">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מקסיקו</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.16830987272588,31.7599024123475,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00069">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>איסלנד</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.16433661213222,31.76028108106547,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00070">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>אורה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>אדום</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.16066389450393,31.75692799290438,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00071">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>טרמינוס האוניבר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.24372866652579,31.79266081926988,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00072">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גאנו</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23316394430392,31.79587889118124,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00073">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>צ'רצ'יל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.24002936212572,31.79658365072913,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00074">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>קציר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23675837998891,31.79721382645797,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00075">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>לשם</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18872570905655,31.73105308637842,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00076">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הגננת</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19298604877504,31.73116067790779,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00077">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הסנונית</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18567115115571,31.73250392697644,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00078">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הרוזמרין</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19463950841967,31.73352510130904,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00079">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גילה טרמינוס</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18044253054219,31.73386754384393,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00080">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>החסידה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18191316541864,31.73403384525082,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00081">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>דגן</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18176102465311,31.73739878474386,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00082">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שבתאי הנגבי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19493303484471,31.73800810612184,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00083">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יער גילה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק-כחו</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.18108072556994,31.73939805541503,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00084">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בגין דרום</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19691008665672,31.74211434621175,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00085">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>איחוד הכפר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19817760675709,31.74749266284423,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00086">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>הפרסה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21061653588951,31.75089386034515,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00087">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>פייר קניג</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21404075646564,31.75271742499651,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00088">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>יהודה הנשיא</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19812834008209,31.75634002499858,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00089">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שחל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19990247960806,31.76118940604087,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00090">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גבעת מרדכי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19652987469124,31.76680934957958,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00091">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מיני קמפוס</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19611391546038,31.77221397949763,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00092">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בלפור</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.1953222008673,31.7772803760198,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00093">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גבעת רם</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.19780944546573,31.78069029737874,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00094">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>ביטוח לאומי</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20065360731817,31.78482544279668,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00095">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בנייני האומה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20350499213455,31.78782834987498,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00096">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>רוממה</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20702818070202,31.78996081433201,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00097">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>ירמיהו</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20952407014818,31.79243168643902,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00098">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>עלי הכהן</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.21367694958183,31.79297688232573,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00099">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>שמואל הנביא</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.2190951412443,31.79533035387688,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00100">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>ארץ חפץ</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22262700013538,31.79744922351556,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00101">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>מחל</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22903626661852,31.79772427938128,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00102">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>קרל נטר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22615472572333,31.79837539449665,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00103">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>גבעה צרפתית</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>ירוק</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה, צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.23848960553897,31.80095014316477,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00104">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>בית צפאפא</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>מוריה</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.20389193839357,31.73184460639433,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark id="ID_00105">
+      <name>0</name>
+      <snippet></snippet>
+      <description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+<td>0</td>
+</tr>
+<tr>
+<td>
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+<tr>
+<td>ID</td>
+<td>0</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>HEB</td>
+<td>קרל נטר</td>
+</tr>
+<tr>
+<td>ENG</td>
+<td></td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>Line</td>
+<td>כחול בהי</td>
+</tr>
+<tr>
+<td>Elevation</td>
+<td>עילית</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>COMP</td>
+<td>צתא''ל</td>
+</tr>
+<tr>
+<td>MTR_AREA</td>
+<td>מטרופולין ירושלים</td>
+</tr>
+<tr bgcolor="#D4E4F3">
+<td>STATUS</td>
+<td>מתוכננת</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
+]]></description>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude><altitudeMode>clampToGround</altitudeMode>
+        <coordinates> 35.22546621460437,31.7958760346403,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Style id="IconStyle00">
+    <IconStyle>
+      <scale>1.000000</scale>
+      <Icon><href>Layer0_Symbol_de0f6d0_0.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <color>00000000</color>
+      <scale>0.000000</scale>
+    </LabelStyle>
+    <PolyStyle>
+      <color>ff000000</color>
+      <outline>0</outline>
+    </PolyStyle>
+  </Style>
+</Document>
+</kml>

@@ -1,0 +1,495 @@
+---
+title: "Assignment4"
+author: "Reuven Herzog"
+date: "10/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load libraries}
+library(osmdata)
+library(opentripplanner)
+library(tidyverse)
+library(sf)
+library(ggthemes)
+library(ggspatial)
+library(wesanderson)
+library(magrittr)
+```
+
+# Jerusalem Light Rail
+
+```{r load data, message = FALSE}
+stops_current <- st_read("JLRT stops phase 1.kml", quiet = TRUE) %>%
+  st_zm(drop = TRUE, what = "ZM")
+stops_phase2 <- st_read("JLRT stops phase 2.kml", quiet = TRUE) %>%
+  st_zm(drop = TRUE, what = "ZM")
+stops_phase3 <- st_read("JLRT stops phase 3.kml", quiet = TRUE) %>%
+  st_zm(drop = TRUE, what = "ZM")
+lines_current <- st_read("JLRT lines phase 1.kml", quiet = TRUE) %>%
+  st_zm(drop = TRUE, what = "ZM")
+lines_phase2 <- st_read("JLRT lines phase 2.kml", quiet = TRUE) %>%
+  st_zm(drop = TRUE, what = "ZM")
+lines_phase3 <- st_read("JLRT lines phase 3.kml", quiet = TRUE) %>%
+  st_zm(drop = TRUE, what = "ZM")
+```
+
+
+```{r Jerusalem street data}
+Israel_TM <- "+proj=tmerc +lat_0=31.73439361111111 +lon_0=35.20451694444445 +k=1.0000067 +x_0=219529.584 +y_0=626907.39 +ellps=GRS80 +towgs84=-48,55,52,0,0,0,0 +units=m +no_defs"
+
+jerusalem_OSM <- osmdata_sf(doc = 'OTP/graphs/default/jerusalem_streets.osm')
+jerusalem_streets_box <- jerusalem_OSM$osm_lines %>%
+  st_transform(crs = Israel_TM)
+```
+```{r Jerusalem street data part 2}
+jlem_boundary <- st_read("Jerusalem LRT/jlem boundary", quiet = TRUE) %>%
+  st_transform(crs = Israel_TM)
+jlem_polygon <- st_polygonize(jlem_boundary)
+
+jerusalem_streets <- jerusalem_streets_box[jlem_polygon,]
+```
+
+I'm going to be looking at Jerusalem and its new light rail network. The first line, the Red Line, opened in 2011.
+The next phase of development is the extension of the Red Line on both ends to Hadassah Hospital - Ein Karem and the Neve Yaakov neighborhood, respectively.
+Also in early construction is the Blue Line and Green Line. Finally, there are plans for more lines, but these are not confirmed yet.
+
+```{r}
+ggplot(lines_current, aes(color = Name)) +
+  geom_sf() +
+  ggtitle('Jerusalem LRT - Phase 1 (Current)') +
+  geom_sf(data = jlem_boundary, color = 'gray') +
+  annotation_scale() +
+  theme_map() +
+  theme(legend.position = "none")
+
+ggplot(lines_phase2, aes(color = Name)) +
+  geom_sf() +
+  ggtitle('Jerusalem LRT - Phase 2') +
+  geom_sf(data = jlem_boundary, color = 'gray') +
+  annotation_scale() +
+  theme_map() +
+  theme(legend.position = "none")
+
+ggplot(lines_phase3, aes(color = Name)) +
+  geom_sf() +
+  ggtitle('Jerusalem LRT - Phase 3') +
+  geom_sf(data = jlem_boundary, color = 'gray') +
+  annotation_scale() +
+  theme_map() +
+  theme(legend.position = "none")
+```
+
+
+
+
+
+
+```{r Jerusalem line map}
+ggplot(jerusalem_streets) +
+  geom_sf() +
+  geom_sf(data = jlem_boundary, color = 'red') +
+  theme_map()
+```
+
+(Ok, yes, there are a couple of enclaves inside the city, but I'm not going to discount them from the street map because it doesn't make sense to.)
+
+```{r setup OpenTripPlanner, results = 'hide'}
+path_data <- file.path(getwd(), "OTP")
+path_otp <- paste(path_data, "otp.jar",sep = "/")
+
+otp_build_graph(otp = path_otp, dir = path_data, memory = 1024) 
+```
+
+```{r, message = FALSE}
+otp_setup(otp = path_otp, dir = path_data, memory =1024)
+```
+```{r, results = 'hide'}
+otpcon <- otp_connect()
+```
+
+
+
+## Drawing Isochrones
+
+Right now I'm mostly interested in comparing Phase 1 to Phase 2.
+Since this is a high-level transit network, I'll allow a walking time of 10 minutes.
+
+```{r draw isochrones, warning = FALSE}
+iso_10min_walk_1 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_current, 
+                mode = "WALK", cutoffSec = 600) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 1)
+iso_10min_walk_1 <- mutate(iso_10min_walk_1, area_10min = as.numeric(st_area(iso_10min_walk_1)))
+
+iso_10min_drive_1 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_current, 
+                mode = "CAR", cutoffSec = 600) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 1)
+iso_10min_drive_1 <- mutate(iso_10min_drive_1, area_10min = as.numeric(st_area(iso_10min_drive_1)))
+
+iso_10min_walk_2 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase2, 
+                mode = "WALK", cutoffSec = 600) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 2)
+iso_10min_walk_2 <- mutate(iso_10min_walk_2, area_10min = as.numeric(st_area(iso_10min_walk_2)))
+
+iso_10min_drive_2 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase2, 
+                mode = "CAR", cutoffSec = 600) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 2)
+iso_10min_drive_2 <- mutate(iso_10min_drive_2, area_10min = as.numeric(st_area(iso_10min_drive_2)))
+
+iso_10min_walk_3 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase3, 
+                mode = "WALK", cutoffSec = 600) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 3)
+iso_10min_walk_3 <- mutate(iso_10min_walk_3, area_10min = as.numeric(st_area(iso_10min_walk_3)))
+
+iso_10min_drive_3 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase3, 
+                mode = "CAR", cutoffSec = 600) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 3)
+iso_10min_drive_3 <- mutate(iso_10min_drive_3, area_10min = as.numeric(st_area(iso_10min_drive_3)))
+
+
+iso_all_modes <- rbind(iso_10min_drive_1, iso_10min_walk_1)
+iso_all_modes2 <- rbind(iso_10min_drive_2, iso_10min_walk_2)
+iso_all_modes3 <- rbind(iso_10min_drive_3, iso_10min_walk_3)
+```
+
+
+```{r draw smaller isochrones, warning = FALSE}
+iso_5min_walk_1 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_current, 
+                mode = "WALK", cutoffSec = 300) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 1)
+iso_5min_walk_1 <- mutate(iso_5min_walk_1, area_5min = as.numeric(st_area(iso_5min_walk_1)))
+
+iso_5min_drive_1 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_current, 
+                mode = "CAR", cutoffSec = 300) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 1)
+iso_5min_drive_1 <- mutate(iso_5min_drive_1, area_5min = as.numeric(st_area(iso_5min_drive_1)))
+
+iso_5min_walk_2 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase2, 
+                mode = "WALK", cutoffSec = 300) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 2)
+iso_5min_walk_2 <- mutate(iso_5min_walk_2, area_5min = as.numeric(st_area(iso_5min_walk_2)))
+
+iso_5min_drive_2 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase2, 
+                mode = "CAR", cutoffSec = 300) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 2)
+iso_5min_drive_2 <- mutate(iso_5min_drive_2, area_5min = as.numeric(st_area(iso_5min_drive_2)))
+
+iso_5min_walk_3 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase3, 
+                mode = "WALK", cutoffSec = 300) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 3)
+iso_5min_walk_3 <- mutate(iso_5min_walk_3, area_5min = as.numeric(st_area(iso_5min_walk_3)))
+
+iso_5min_drive_3 <- 
+  otp_isochrone(otpcon = otpcon, fromPlace = stops_phase3, 
+                mode = "CAR", cutoffSec = 300) %>%
+  st_transform(crs = Israel_TM) %>%
+  mutate(mode = "walk", phase = 3)
+iso_5min_drive_3 <- mutate(iso_5min_drive_3, area_5min = as.numeric(st_area(iso_5min_drive_3)))
+
+iso_all_modes_small1 <- rbind(iso_5min_drive_1, iso_5min_walk_1)
+iso_all_modes_small2 <- rbind(iso_5min_drive_2, iso_5min_walk_2)
+iso_all_modes_small3 <- rbind(iso_5min_drive_3, iso_5min_walk_3)
+```
+```{r}
+otp_stop(warn = FALSE)
+```
+
+
+## Visualizing Isochrones
+
+```{r}
+right_side <- st_bbox(jerusalem_streets)$xmax
+left_side  <- st_bbox(jerusalem_streets)$xmin
+top_side <- st_bbox(jerusalem_streets)$ymax
+bottom_side <- st_bbox(jerusalem_streets)$ymin
+
+
+
+ggplot(iso_10min_walk_1) +
+  geom_sf(data = jerusalem_streets, color = "gray") +
+  geom_sf(fill = 'blue', alpha = 0.5) +
+  geom_sf(data = lines_current, aes(color = Name)) +
+  geom_sf(data = stops_current) +
+  coord_sf(xlim = c(left_side, right_side), 
+           ylim = c(bottom_side, top_side), expand = FALSE) +
+  ggtitle('JLRT Phase 1 - 10 Minute Walk') +
+  theme_map() +
+  theme(legend.position = "none")
+
+ggplot(iso_10min_walk_2) +
+  geom_sf(data = jerusalem_streets, color = "gray") +
+  geom_sf(fill = 'purple', alpha = 0.5) +
+  geom_sf(data = lines_phase2, aes(color = Name)) +
+  geom_sf(data = stops_phase2) +
+  coord_sf(xlim = c(left_side, right_side), 
+           ylim = c(bottom_side, top_side), expand = FALSE) +
+  ggtitle('JLRT Phase 2 - 10 Minute Walk') +
+  theme_map() +
+  theme(legend.position = "none")
+```
+
+```{r}
+ggplot(iso_5min_walk_1) +
+  geom_sf(data = jerusalem_streets, color = "gray") +
+  geom_sf(fill = 'orange', alpha = 0.5) +
+  geom_sf(data = stops_current) +
+  coord_sf(xlim = c(left_side, right_side), 
+           ylim = c(bottom_side, top_side), expand = FALSE) +
+  ggtitle('JLRT Phase 1 - 5 Minute Walk') +
+  theme_map()
+
+ggplot(iso_5min_walk_2) +
+  geom_sf(data = jerusalem_streets, color = "gray") +
+  geom_sf(fill = 'yellow', alpha = 0.5) +
+  geom_sf(data = stops_phase2) +
+  coord_sf(xlim = c(left_side, right_side), 
+           ylim = c(bottom_side, top_side), expand = FALSE) +
+  ggtitle('JLRT Phase 2 - 5 Minute Walk') +
+  theme_map()
+```
+
+
+OK, now this is starting to look interesting. In a situation of a perfectly connected network,
+a 10-minute isochrone should be 4 times as big as a 5-minute isochrone. Is this true?
+
+```{r 5-10 phase 2 comparison}
+iso_phase2_combined <- rbind(mutate(iso_10min_walk_2, area = area_10min, area_10min = NULL), mutate(iso_5min_walk_2, area = area_5min, area_5min = NULL))
+
+phase2_combined <- inner_join(iso_10min_walk_2 %>% as.data.frame(), iso_5min_walk_2 %>% as.data.frame(), by = "fromPlace")
+#phase2_combined <- st_sf(phase2_combined, sf_column_name = "geometry.x")
+#phase2_combined <- mutate(phase2_combined, area_10min = as.numeric(st_area(phase2_combined)))
+#phase2_combined <- st_sf(phase2_combined, sf_column_name = "geometry.y")
+#phase2_combined <- mutate(phase2_combined, area_5min = as.numeric(st_area(phase2_combined)))
+phase2_combined <- mutate(phase2_combined, ratio_5_10 = phase2_combined$area_10min / phase2_combined$area_5min)
+```
+
+```{r}
+ggplot(phase2_combined, aes(x = area_5min/1000000, y = area_10min/1000000)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  scale_x_continuous(name = "5-Minute Walkshed") +
+  scale_y_continuous(name = "10-Minute Walkshed") +
+  geom_segment(aes(x = 0, y = 0, xend = .2316393, yend = .2316393*4)) +
+  annotate(geom = "text", label = "y = 4x", x = .2000, y = .900000, size = 4) +
+  ggtitle("JLRT Walksheds -(km^2)") +
+  theme_bw()
+```
+
+```{r}
+ggplot(phase2_combined) +
+  geom_violin(aes(x = "10-Minute", y = area_10min/1000000), fill = wes_palette("GrandBudapest2", n = 4)[[1]]) +
+  geom_violin(aes(x = "5-Minute", y = area_5min/1000000), fill = wes_palette("GrandBudapest2", n = 4)[[2]]) +
+  geom_violin(aes(x = "10_min / 4", y = area_10min/4000000), fill = wes_palette("GrandBudapest2", n = 4)[[3]]) +
+  ylab("Walkshed Area (km^2)") +
+  xlab("Walkshed Size") +
+  theme_bw()
+```
+
+
+Alright, this is not at all what I expected. The 10-minute walkshed is nearly always more than 4x the 5-minute walkshed.
+This should be clear from both the scatterplot and the two rightmost violin plots.
+FUrthermore, the shape is different: The 5-minute walkshed is much more "squishy" towards the bottom - in other words, it is skewed toward smaller areas, whereas the 10 minute walkshed is more balanced, though centered on higher values.
+
+For one final graph within this analysis, let's see a single-variable breakdown of the 10-min/5-min ratio:
+
+```{r}
+ggplot(phase2_combined, aes(x = "", y = ratio_5_10)) +
+  geom_violin(fill = wes_palette("GrandBudapest2", n = 4)[[4]]) +
+  scale_y_continuous(limits = c(0,100)) +
+  geom_segment(x = 0.55, xend = 1.45, y = 6.81, yend = 6.81) +
+  annotate(geom = "text", label = "Median Area Ratio: 6.81", x = 1.4, y = 50) +
+  annotate(geom = "text", label = paste("Median Radius Ratio:", round(6.81^0.5, 3)), x = 1.4, y = 30) +
+  theme_bw()
+```
+
+We can see from this last plot that not only is the median ratio well above 4, it is skewed right, with some remarkable outliers!
+(Of course, it's possible the outliers are because of data imperfections, but the trend cannot be ignored.)
+
+## Interpretation
+What can we learn from the fact that the stations' 10-minute walksheds are more than we would expect relative to their 5-minute ones?
+I propose a throroughly untested theory:
+Light rail stations are on major boulevards, and it is possible that the blocks on those boulevards are longer than on side streets.
+If a walker has only 5 minutes to get somewhere, he doesn't have many options walking down the tracks, very few turn-offs onto side streets. However, the next five minutes open a much tighter network, with more options, paths, and areas for diversion.
+
+
+# Once More, with Cars
+
+```{r}
+ggplot(iso_10min_drive_2) +
+  geom_sf(data = jerusalem_streets, color = "gray") +
+  geom_sf(fill = 'purple', alpha = 0.5) +
+  geom_sf(data = lines_phase2, aes(color = Name)) +
+  geom_sf(data = stops_phase2) +
+  coord_sf(xlim = c(left_side, right_side), 
+           ylim = c(bottom_side, top_side), expand = FALSE) +
+  ggtitle('JLRT Phase 2 - 10 Minute Drive') +
+  theme_map() +
+  theme(legend.position = "none")
+
+ggplot(iso_5min_drive_2) +
+  geom_sf(data = jerusalem_streets, color = "gray") +
+  geom_sf(fill = 'blue', alpha = 0.5) +
+  geom_sf(data = lines_phase2, aes(color = Name)) +
+  geom_sf(data = stops_phase2) +
+  coord_sf(xlim = c(left_side, right_side), 
+           ylim = c(bottom_side, top_side), expand = FALSE) +
+  ggtitle('JLRT Phase 2 - 5 Minute Drive') +
+  theme_map() +
+  theme(legend.position = "none")
+```
+
+OK, this is once again interesting. The 10-minute driveshed covers almost the entire city, except for some of the easternmost, Arab neighborhoods (foreshadowing...).
+
+Other initial thoughts: The 5-minute driveshed is somewhat in between the 5-minute and 10-minute walkshed.
+
+```{r 5-10 phase 2 comparison drive}
+iso_phase2_combined_drive <- rbind(mutate(iso_10min_drive_2, area = area_10min, area_10min = NULL), mutate(iso_5min_drive_2, area = area_5min, area_5min = NULL))
+
+phase2_combined_drive <- inner_join(iso_10min_drive_2 %>% as.data.frame(), iso_5min_drive_2 %>% as.data.frame(), by = "fromPlace")
+#phase2_combined_drive <- st_sf(phase2_combined_drive, sf_column_name = "geometry.x")
+#phase2_combined_drive <- mutate(phase2_combined_drive, area_10min = as.numeric(st_area(phase2_combined_drive)))
+#phase2_combined_drive <- st_sf(phase2_combined_drive, sf_column_name = "geometry.y")
+#phase2_combined_drive <- mutate(phase2_combined_drive, area_5min = as.numeric(st_area(phase2_combined_drive)))
+phase2_combined_drive <- mutate(phase2_combined_drive, ratio_5_10 = phase2_combined_drive$area_10min / phase2_combined_drive$area_5min)
+```
+
+```{r}
+lm_eqn <- function(df, y, x){
+    m <- lm(y ~ x, df);
+    coefs <- list(a = format(unname(coef(m)[1]), digits = 2),
+              b = format(unname(coef(m)[2]), digits = 2))
+    paste0("y = ", coefs[1],"x + ",coefs[2])
+}
+
+
+ggplot(phase2_combined_drive, aes(x = area_5min/1000000, y = area_10min/1000000)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  scale_x_continuous(name = "5-Minute Walkshed") +
+  scale_y_continuous(name = "10-Minute Walkshed") +
+  geom_segment(aes(x = 0, y = 0, xend = max(phase2_combined_drive$area_5min)/1000000,
+                   yend = max(phase2_combined_drive$area_5min)*4/1000000)) +
+  annotate(geom = "text", label = "y = 4x", x = 1.25, y = 4) +
+  annotate(geom = "text", x = 1.25, y = 14, label = lm_eqn(phase2_combined_drive, x = phase2_combined_drive$area_5min/1000000, y = phase2_combined_drive$area_10min/1000000)) +
+  ggtitle("JLRT Drivesheds -(km^2)") +
+  theme_bw()
+```
+
+```{r}
+ggplot(phase2_combined_drive) +
+  geom_violin(aes(x = "10-Minute", y = area_10min/1000000), fill = wes_palette("Moonrise2", n = 4)[[1]]) +
+  geom_violin(aes(x = "5-Minute", y = area_5min/1000000), fill = wes_palette("Moonrise2", n = 4)[[2]]) +
+  geom_violin(aes(x = "10_min / 4", y = area_10min/4000000), fill = wes_palette("Moonrise2", n = 4)[[3]]) +
+  ylab("Driveshed Area (km^2)") +
+  xlab("Driveshed Size") +
+  theme_bw()
+```
+
+```{r}
+ggplot(phase2_combined_drive, aes(x = "", y = ratio_5_10)) +
+  geom_violin(fill = wes_palette("Moonrise2", n = 4)[[4]]) +
+  scale_y_continuous(limits = c(0,100)) +
+  geom_segment(x = 0.55, xend = 1.45, y = 18.28, yend = 18.28) +
+  annotate(geom = "text", label = "Median: 18.28", x = 1.4, y = 50) +
+  annotate(geom = "text", label = paste("Median Radius Ratio:", round(18.28^0.5, 3)), x = 1.4, y = 30) +
+  theme_bw()
+```
+
+OK, let's review these findings: The shape of the 5-minute and 10-minute driveshed distributions do look more similar to each other
+than do the respective walksheds. However, the ratio tends to be much greater than with walking. This likely has to do with the fact that,
+while walking speed is normally constant, driving speeds vary greatly between side roads and major arterials and highways.
+The extra 5 minutes likely make it more likely to reach an arterial road, so you can travel faster, and therefore farther in those 5 minutes.
+
+
+
+# Citywide Coverage
+
+Lastly, lets do a simple comparison of how much of the city is covered within each type of isochrone for each phase.
+I'm not entirely certain how the isochrone is calculated - how far off of the graph a person can travel. Let's assume it's 75m.
+
+```{r}
+jlem_places <- st_buffer(jerusalem_streets, 75) %>% st_union()
+jlem_size = as.numeric(st_area(jlem_places))
+
+w101 <- as.numeric(st_area(st_union(iso_10min_walk_1)))
+w102 <- as.numeric(st_area(st_union(iso_10min_walk_2)))
+w103 <- as.numeric(st_area(st_union(iso_10min_walk_3)))
+d101 <- as.numeric(st_area(st_union(iso_10min_drive_1)))
+d102 <- as.numeric(st_area(st_union(iso_10min_drive_2)))
+d103 <- as.numeric(st_area(st_union(iso_10min_drive_3)))
+w051 <- as.numeric(st_area(st_union(iso_5min_walk_1)))
+w052 <- as.numeric(st_area(st_union(iso_5min_walk_2)))
+w053 <- as.numeric(st_area(st_union(iso_5min_walk_3)))
+d051 <- as.numeric(st_area(st_union(iso_5min_drive_1)))
+d052 <- as.numeric(st_area(st_union(iso_5min_drive_2)))
+d053 <- as.numeric(st_area(st_union(iso_5min_drive_3)))
+
+p1s <- c(w051/jlem_size, d051/jlem_size)
+p2s <- c(w052/jlem_size, d052/jlem_size)
+p3s <- c(w053/jlem_size, d053/jlem_size)
+p1l <- c(w101/jlem_size, d101/jlem_size)
+p2l <- c(w102/jlem_size, d102/jlem_size)
+p3l <- c(w103/jlem_size, d103/jlem_size)
+
+shed_share_5min <- tibble(mode = c("5-minute walk", "5-minute drive"), phase_1 = p1s, phase2 = p2s, phase3 = p3s)
+shed_share_10min <- tibble(mode = c("10-minute walk", "10-minute drive"), phase = p1l, phase2 = p2l, phase3 = p3l)
+
+
+shed_share_5min
+shed_share_10min
+```
+
+We can see from these charts that when Phase 2 is completed in a few years, ~7% of the city will be within a 5-minute walk from a stop,
+but ~30% will be within a 10-minute walk! The jump from Phase 2 to 3 is not as significant, with only a 25% increase in both the 5- and
+10- minute walksheds.
+Additionally, this data shows conclusively that the 10-minute walkshed is larger than the 5-minute driveshed! This implies that Jerusalem
+is more friendly to walking than driving.
+
+# We can't talk about Jerusalem without mentioning politics
+
+Functionally, Jerusalem is a spatially divided city. The Arab neighborhoods of the city are generally to the east, north, and south of the Jewish areas.
+Approximately 40% of the city's population is Arab, living mostly in neighborhoods near the Old City and villages on the eastern hills
+that expanded and were enveloped into the growing city. Broadly speaking, the Arab neighborhoods suffer from less development and
+fewer services than the Jewish neighborhoods, for a variety of reasons that I can't address in detail now.
+
+When the Red Line was first built a decade ago, the route to its northern terminus in the Jewish neighborhood of Pisgat Zeev was chosen
+to traverse the Arab neighborhood of Shu'afat. This arose great controversy, as much of the nationalist Palestinian community and their
+sympathizers abroad viewed this as furthering illegal occupation of Palestinian land and entrenching a "united" Jerusalem.
+However, the alternative would be to continue transit development on behalf of Jews while bypassing Arabs.
+After the line opened, many Arabs used the line to go to shops and jobs in central Jerusalem, though there were also times when Arabs
+threw rocks at the light rail train in protest.
+
+The plans for future development of the light rail system focus mainly on the western, Jewish areas of the city. Only the Brown Line, included in Phase 3, focuses on Arab neighborhoods in both the north and east of the city.
+
+Like I mentioned, the situation of East Jerusalem is incredibly complex. The neighborhoods there are developed differently from the 
+Jewish ones, and without further research I assume that these areas are more challenging for a light rail system from the effects of
+topography and development patterns, not just ethnicity, bias, and politics.
+
+I hope to spend much more time researching and understanding contemporary Jerusalem in all its complexities, and I hope that the
+Arab population, so often caught between an apathetic or antagonistic Israeli government and uncompromsing Palestinian leaders, will
+be able to develop properly and justly.
