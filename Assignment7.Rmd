@@ -1,0 +1,224 @@
+---
+title: "Assignment 7"
+author: "Reuven Herzog"
+date: "11/2/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Doggos of Cambridge
+## Assignment 7 - Raster Interpolation
+
+```{r loadlibraries, warning = FALSE, message = FALSE}
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(htmltools)
+library(htmlwidgets)
+library(raster)
+library(gstat)
+library(spatial)
+library(ggplot2)
+```
+
+
+I will be working primarily with data obtained from the Cambridge Open Data portal. The locations of dogs are geomasked - scrambled approximately by a city block - so even though this is a point dataset, it is imprecise to treat it as such. I will aggregate it in two manners - to Census Block Groups and official neighborhoods.
+
+```{r obtain data, message = FALSE}
+MA_state_plane <- "+proj=lcc +lat_1=41.71666666666667 +lat_2=42.68333333333333 +lat_0=41 +lon_0=-71.5 +x_0=200000 +y_0=750000 +ellps=GRS80 +units=m +no_defs "
+
+WGS84 <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+CDogs <- st_read("https://data.cambridgema.gov/resource/sckh-3xyx.geojson", quiet = FALSE) %>%
+  st_transform(crs = MA_state_plane)
+MassBlocks <- st_read("Cambridge Block Groups/tl_2019_25_bg.shp", quiet = FALSE) %>%
+  st_transform(crs = MA_state_plane)
+Cbg_Nhoods <- st_read("https://data.cambridgema.gov/resource/yssz-ub2n.geojson", quiet = FALSE) %>%
+  st_transform(crs = MA_state_plane)
+```
+
+```{r manipulate data}
+cbg_tracts_list <- c('352101','352102','352200','352300','352400','352500','352600','352700','352800','352900','353000','353101','353102','353200','353300','353400','353500','353600','353700','353800','353900','354000','354100','354200','354300','354400','354500','354600','354700','354800','354900','355000')
+Cbg_Blocks <- MassBlocks[MassBlocks$TRACTCE %in% cbg_tracts_list,]
+Cbg_Blocks <- mutate(Cbg_Blocks, num_dogs = lengths(st_covers(Cbg_Blocks,CDogs)))
+Cbg_Nhoods <- mutate(Cbg_Nhoods, num_dogs = lengths(st_covers(Cbg_Nhoods,CDogs)))
+```
+
+## Visualizing Vector Data
+
+First of all, let's see where the dogs are (roughly), without aggregating:
+
+```{r first points}
+dogPoints <-ggplot(CDogs) +
+  geom_sf() +
+  geom_sf(data = Cbg_Nhoods, fill = NA) +
+  theme_classic()
+dogPoints
+```
+We can already see some effects of the geomasking - a few points lie outside the boundary of Cambridge.
+
+```{r}
+paste("Total Dogs:",nrow(CDogs))
+paste("Number of dogs lost in the Block Group Aggregate:",nrow(CDogs) - sum(Cbg_Blocks$num_dogs))
+paste("Number of dogs lost in the Neighborhood Aggregate:",nrow(CDogs) - sum(Cbg_Nhoods$num_dogs))
+```
+(This discrepancy can be accounted for by the slight differences in the maps and their respective sources (Cambridge Municipality vs US Census))
+
+Now that we have our data, let's visualize it, starting with chloropeth maps
+
+```{r chloropeth nhood}
+label <-
+  paste(Cbg_Nhoods$name, "<br>",
+        Cbg_Nhoods$num_dogs, "Doggos") %>%
+  lapply(htmltools::HTML)
+
+pal1 <- colorNumeric("viridis", 
+                    domain = Cbg_Nhoods$num_dogs,
+                    na.color = "#00000000")
+
+leaflet(st_transform(Cbg_Nhoods, WGS84)) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addPolygons(highlightOptions = highlightOptions(fillOpacity=1),
+              label = ~label,
+              fillColor = pal1(Cbg_Nhoods$num_dogs),fillOpacity = 0.7,
+              weight = 1, color = "black") %>%
+  addLegend(pal = pal1,
+            values = ~num_dogs,
+            bins = 3,
+            opacity = 0.7,
+            title = "Dogs Per Neighborhood", position = "topright")
+```
+
+```{r chloropeths 2}
+pal2 <- colorNumeric("viridis", 
+                    domain = Cbg_Blocks$num_dogs,
+                    na.color = "#00000000")
+
+leaflet(st_transform(Cbg_Blocks, WGS84)) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addPolygons(highlightOptions = highlightOptions(fillOpacity=1),
+              label = paste(Cbg_Blocks$num_dogs, "Good Boys"),
+              fillColor = ~pal2(num_dogs), fillOpacity = 0.7,
+              weight = 1, color = "black") %>%
+  addLegend(pal = pal2,
+            values = ~num_dogs,
+            bins = 3,
+            opacity = 0.7,
+            title = "Dogs Per Block Group", position = "topright")
+```
+
+OK - first off this comparison shows how aggregating data to different levels can imply different results. There are many more areas at bottom of the scale on the Block Group map than even in the analogous neighborhoods; this is likely due to the block groups being smaller in these areas.
+A good way to correct this may be instead to map dogs per residence, or perhaps to standardize polygon size.
+(One of these ways requires finding more data, therefore I am likely to choose the other.)
+
+
+## Rasterize Me
+
+Especially considering the different sizes of polgyons in the block group chloropeth map, an interpolated dataset may be better.
+
+```{r get centroids, warning = FALSE}
+nhood_centroids <- st_centroid(Cbg_Nhoods)
+nhood_centroids_sp <- nhood_centroids %>% as_Spatial()
+bg_centroids <- st_centroid(Cbg_Blocks)
+bg_centroids_sp <- bg_centroids %>% as_Spatial()
+```
+
+```{r centroid map nhood}
+leaflet(st_transform(nhood_centroids, WGS84)) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addCircles(label = ~label,
+             fillColor = ~pal1(num_dogs),
+             stroke = TRUE,
+             weight = 1,
+             radius = 75,
+             fillOpacity = 1) %>%
+  addLegend(pal = pal1,
+            values = ~num_dogs,
+            bins = 3,
+            opacity = 0.7,
+            title = "Dogs Per Neighborhood", position = "topright")
+```
+
+```{r bg centroids}
+leaflet(st_transform(bg_centroids, WGS84)) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addCircles(label = ~label,
+             fillColor = ~pal2(num_dogs),
+             stroke = TRUE,
+             weight = 1,
+             radius = 75,
+             fillOpacity = 1) %>%
+  addLegend(pal = pal2,
+            values = ~num_dogs,
+            bins = 3,
+            opacity = 0.7,
+            title = "Dogs Per Block Group", position = "topright")
+```
+
+
+```{r rasters, warning = FALSE}
+Cbg_sp <- Cbg_Nhoods %>% as_Spatial()
+cambridge_raster <- raster(Cbg_sp, res = 10)
+
+gs <- gstat(formula = num_dogs~1, locations = nhood_centroids_sp)
+idw_interp <- interpolate(cambridge_raster, gs)
+
+idw_interp_clip <- mask(idw_interp, Cbg_sp)
+
+gs <- gstat(formula = num_dogs~1, locations = bg_centroids_sp)
+idw_interp_2 <- interpolate(cambridge_raster, gs)
+idw_interp_clip2 <- mask(idw_interp_2, Cbg_sp)
+```
+
+```{r nhood raster, warning = FALSE}
+leaflet(nhood_centroids) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addRasterImage(idw_interp_clip,
+                 colors = colorNumeric("viridis", 
+                    domain = Cbg_Nhoods$num_dogs,
+                    na.color = "#00000000"),
+                 opacity = 0.8) %>%
+  addLegend(pal = pal1,
+            values = ~num_dogs,
+            bins = 3,
+            opacity = 0.7,
+            title = "Estimated Dogs",
+            position = "topright")
+```
+
+```{r bg raster, warning = FALSE}
+leaflet(bg_centroids) %>%
+  addProviderTiles(providers$Stamen.TonerLite) %>%
+  addRasterImage(idw_interp_clip2,
+                 colors = colorNumeric("viridis", 
+                    domain = Cbg_Blocks$num_dogs,
+                    na.color = "#00000000"),
+                 opacity = 0.8) %>%
+  addLegend(pal = pal2,
+            values = ~num_dogs,
+            bins = 3,
+            opacity = 0.7,
+            title = "Estimated Dogs",
+            position = "topright")
+```
+
+
+For fun's sake, let's just bring back the original point map:
+```{r points again}
+dogPoints
+```
+
+## A bit of analysis
+
+The chloropeth map has difficulty with stark boundaries whose starkness isn't reflected in real life; the raster data is better in this regard. The centroids, to me at least, are relatively useless unless I want to clarify something on the raster. (When sharing with an audience, I would only share the centroid map to supplement the raster map, if I so chose.)
+
+The raster itself is beneficial, particularly with the neighborhood analysis, to smooth out these boundaries.
+However, a significant flaw with the data, particularly with the block group analysis, is that the polygons are not the same size, nor do they contain the same number of households. So the data might indicate concentrations of dogs, but not a good indicator of why, or which areas have more dog-loving households (as a ratio). Particularly in North Cambridge, where even the block groups are large, the centroid, and therefore the raster, has undserved weight.
+Displaying this as a chloropeth map, therefore, inserts a visual cue that not every block group is equal on this map; something the raster does not make clear.
+
+Looking at the point map, we see greater concentrations around Cambridgeport, Riverside, and Mid-Cambridge than we do in Observatory Hill / Fresh Pond. Yet the raster implies otherwise.
+
+For the neighborhood level analysis, I prefer the raster. For the block group analysis, I prefer chloropeth - my favorite map of the bunch.
