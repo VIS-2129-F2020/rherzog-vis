@@ -269,17 +269,18 @@ OK, so this is ... somewhat helpful. The problem is that a full neighborhood is 
 park_plot <- ggplot(neighborhoods, aes(fill = park_area_km2)) +
   geom_sf() +
   scale_fill_gradient(low = "white", high = "forestgreen", name = "Total Green Space by\nInhabited Neighborhood (km^2)", limits = c(0,0.25)) +
-  annotation_north_arrow(location = 'tl') +
+  annotation_north_arrow(location = 'tl', style = north_arrow_minimal()) +
   annotation_scale(location = 'br') +
   theme_map() +
   theme(legend.background = element_rect(fill = alpha("white", 0.5), 
                                          color = "gray")) +
-  theme(legend.position = "right") +
-  annotate(geom = "label",
-           x = st_bbox(neighborhoods)$xmax - 8000, y = st_bbox(neighborhoods)$ymax - 1250,
-           label = "HaYarkon Park, with 1.5 km^2 of\ngreen space, is in grey, to not\noverwhelm the other data variations",
-           alpha = 0.5,
-           hjust = 0, vjust = 0, size = 3)
+  theme(legend.position = "right")
+# +
+#   annotate(geom = "label",
+#            x = st_bbox(neighborhoods)$xmax - 8000, y = st_bbox(neighborhoods)$ymax - 1250,
+#            label = "HaYarkon Park, with 1.5 km^2 of\ngreen space, is in grey, to not\noverwhelm the other data variations",
+#            alpha = 0.5,
+#            hjust = 0, vjust = 0, size = 3)
 park_plot
 ```
 

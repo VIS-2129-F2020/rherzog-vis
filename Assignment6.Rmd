@@ -1,0 +1,59 @@
+---
+title: "Assignment 6"
+author: "Reuven Herzog"
+date: "10/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load libraries}
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(htmltools)
+library(htmlwidgets)
+```
+
+```{r load data}
+euro_countries <- st_read('https://opendata.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0.geojson') %>%
+  rename(c("Country" = "COUNTRY"))
+euro_stats <- read.csv('Eurovision/eurovision aggregate data.csv') %>%
+  rename(c('Country' = 'ï..Country'))
+euro_countries <- inner_join(euro_countries,euro_stats)
+```
+
+```{r}
+color_wins <- colorNumeric(palette = 'YlOrRd', domain = euro_countries$Wins)
+
+euro_countries$label <-
+  paste(euro_countries$Country, "<br>", euro_countries$Wins, ifelse(euro_countries$Wins == 1, " Win", " Wins")) %>%
+  lapply(htmltools::HTML)
+
+euro_countries$describe <-
+  paste(euro_countries$Country, "<br>", euro_countries$Wins, ifelse(euro_countries$Wins == 1, " Win", " Wins"), "<br>",
+        euro_countries$Finals, ifelse(euro_countries$Finals == 1, " Final", " Finals"), "<br>",
+        "Most Recent Final: ", euro_countries$Latest.final.a., "<br>",
+        "Favorite Country (1975-2019): ", euro_countries$Favorite.Country..1975.., "<br>",
+        "Least Favorite Country (1975-2019): ", euro_countries$Least.Favorite.Country..1975.., "<br>",
+        "Most Supportive Country (1975-2019): ", euro_countries$Most.Supportive.Country..1975.., "<br>",
+        "Least Supportive Country (1975-2019): ", euro_countries$Least.Supportive.Country..1975.., "<br>") %>%
+  lapply(htmltools::HTML)
+
+eurovision_map <- leaflet(euro_countries) %>%
+  addProviderTiles(providers$CartoDB.Voyager) %>%
+  addPolygons(fillColor = ~color_wins(euro_countries$Wins), stroke = TRUE, weight = 1, fillOpacity = 1,
+              highlightOptions = highlightOptions(fillColor = "darkblue", fillOpacity = 1),
+              label = ~label, popup = ~describe) %>%
+  addControl("Eurovision Wins", position = "topright") %>%
+  addControl("Data from Wikipedia, Datagraver", position = "bottomleft")
+
+eurovision_map
+```
+
+```{r}
+saveWidget(eurovision_map, file = 'eurovision_map.html')
+```
+

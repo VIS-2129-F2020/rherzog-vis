@@ -126,15 +126,16 @@ ca_GDP_data <- CA_data %>%
   rename("Population" = "VALUE") %>%
   left_join(ca_GDP, by = c("gn_name" = "GEO")) %>%
   rename("GDP" = "VALUE") %>%
-  mutate("GDP Per Capita" = GDP / Population) %>%
-  select("name", "GDP", "Population", "GDP Per Capita")
+  mutate("GDP Per Capita" = GDP / Population, "GDP_billions" = GDP/1000000000) %>%
+  select("name", "GDP", "Population", "GDP Per Capita", "GDP_billions")
 ```
 
 
 ```{r GDP chloropeth}
-ggplot(ca_GDP_data, aes(fill = GDP)) +
+ggplot(ca_GDP_data, aes(fill = GDP_billions)) +
   geom_sf() + coord_sf(crs = stats_ca) +
-  scale_fill_viridis_c()
+  scale_fill_viridis_c(name = "GDP (in Billions)") +
+  theme_bw()
 ```
 
 And a continuous cartogram, based on population:
@@ -142,9 +143,9 @@ And a continuous cartogram, based on population:
 ca_transformed <- st_transform(x = ca_GDP_data, crs = stats_ca)
 ca_GDP_cartogram <- ca_transformed %>%
   cartogram_cont(weight = "Population")
-ggplot(ca_GDP_cartogram, aes(fill = GDP)) +
+ggplot(ca_GDP_cartogram, aes(fill = GDP_billions)) +
   geom_sf() +
-  scale_fill_viridis_c() +
+  scale_fill_viridis_c(name = "GDP (in Billions)") +
   theme_bw()
 ```
 
@@ -152,9 +153,9 @@ ggplot(ca_GDP_cartogram, aes(fill = GDP)) +
 ca_transformed <- st_transform(x = ca_GDP_data, crs = stats_ca)
 ca_GDP_ncartogram <- ca_transformed %>%
   cartogram_ncont(weight = "Population")
-ggplot(ca_GDP_ncartogram, aes(fill = GDP)) +
+ggplot(ca_GDP_ncartogram, aes(fill = GDP_billions)) +
   geom_sf() +
-  scale_fill_viridis_c() +
+  scale_fill_viridis_c(name = "GDP (in Billions)") +
   theme_bw()
 ```
 We can abstract this more to a Dorling cartogram.
