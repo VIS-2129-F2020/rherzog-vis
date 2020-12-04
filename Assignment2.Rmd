@@ -135,7 +135,7 @@ ca_GDP_data <- CA_data %>%
 ggplot(ca_GDP_data, aes(fill = GDP_billions)) +
   geom_sf() + coord_sf(crs = stats_ca) +
   scale_fill_viridis_c(name = "GDP (in Billions)") +
-  theme_bw()
+  theme_minimal()
 ```
 
 And a continuous cartogram, based on population:
@@ -146,7 +146,7 @@ ca_GDP_cartogram <- ca_transformed %>%
 ggplot(ca_GDP_cartogram, aes(fill = GDP_billions)) +
   geom_sf() +
   scale_fill_viridis_c(name = "GDP (in Billions)") +
-  theme_bw()
+  theme_minimal()
 ```
 
 ```{r GDP ncont cartogram}
@@ -156,7 +156,7 @@ ca_GDP_ncartogram <- ca_transformed %>%
 ggplot(ca_GDP_ncartogram, aes(fill = GDP_billions)) +
   geom_sf() +
   scale_fill_viridis_c(name = "GDP (in Billions)") +
-  theme_bw()
+  theme_minimal()
 ```
 We can abstract this more to a Dorling cartogram.
 

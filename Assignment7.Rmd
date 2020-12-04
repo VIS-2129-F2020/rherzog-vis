@@ -79,7 +79,7 @@ pal1 <- colorNumeric("viridis",
                     domain = Cbg_Nhoods$num_dogs,
                     na.color = "#00000000")
 
-leaflet(st_transform(Cbg_Nhoods, WGS84)) %>%
+nhood_polygons <- leaflet(st_transform(Cbg_Nhoods, WGS84)) %>%
   addProviderTiles(providers$Stamen.TonerLite) %>%
   addPolygons(highlightOptions = highlightOptions(fillOpacity=1),
               label = ~label,
@@ -90,6 +90,7 @@ leaflet(st_transform(Cbg_Nhoods, WGS84)) %>%
             bins = 3,
             opacity = 0.7,
             title = "Dogs Per Neighborhood", position = "topright")
+nhood_polygons
 ```
 
 ```{r chloropeths 2}
@@ -97,7 +98,7 @@ pal2 <- colorNumeric("viridis",
                     domain = Cbg_Blocks$num_dogs,
                     na.color = "#00000000")
 
-leaflet(st_transform(Cbg_Blocks, WGS84)) %>%
+bg_polygons <- leaflet(st_transform(Cbg_Blocks, WGS84)) %>%
   addProviderTiles(providers$Stamen.TonerLite) %>%
   addPolygons(highlightOptions = highlightOptions(fillOpacity=1),
               label = paste(Cbg_Blocks$num_dogs, "Good Boys"),
@@ -108,6 +109,7 @@ leaflet(st_transform(Cbg_Blocks, WGS84)) %>%
             bins = 3,
             opacity = 0.7,
             title = "Dogs Per Block Group", position = "topright")
+bg_polygons
 ```
 
 OK - first off this comparison shows how aggregating data to different levels can imply different results. There are many more areas at bottom of the scale on the Block Group map than even in the analogous neighborhoods; this is likely due to the block groups being smaller in these areas.
@@ -190,7 +192,7 @@ leaflet(nhood_centroids) %>%
 ```
 
 ```{r bg raster, warning = FALSE}
-leaflet(bg_centroids) %>%
+bg_raster_map <- leaflet(bg_centroids) %>%
   addProviderTiles(providers$Stamen.TonerLite) %>%
   addRasterImage(idw_interp_clip2,
                  colors = colorNumeric("viridis", 
@@ -203,6 +205,7 @@ leaflet(bg_centroids) %>%
             opacity = 0.7,
             title = "Estimated Dogs",
             position = "topright")
+bg_raster_map
 ```
 
 

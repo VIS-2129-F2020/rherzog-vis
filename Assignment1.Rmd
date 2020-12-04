@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(tidycensus)
 library(ggplot2)
+library(scales)
 ```
 Selecting data for census tracts in the 5 most urbanized counties in northern New Jersey: Bergen, Passaic, Essex, Hudson, and Union.
 Selecting for county, rurality/urbanity, majority race, percent renters, average household size, total population, and median age.
@@ -168,7 +169,8 @@ This plot is intriguing, and begins our exploration into the connection between 
 county_violin <- ggplot(NNJ_tracts,aes(x = reorder(county, -1*pct_rental), y = pct_rental)) +
   geom_violin(aes(fill=county, color=county),show.legend=FALSE) +
   scale_x_discrete(name=NULL) +
-  scale_y_continuous(name="Share of Rental Households")
+  scale_y_continuous(name="Share of Rental Households") +
+  theme_bw()
 county_violin
 ```
 
@@ -192,7 +194,8 @@ ggplot(NNJ_tracts,aes(x = reorder(county, -1*pct_rental), y = pct_rental, color 
   scale_color_discrete(name = "Majority Race/Ethnicity",
                        labels = c("Hispanic", "Non-Hispanic Asian",
                        "Non-Hispanic Black", "Non-Hispanic White",
-                       "No Majority"))
+                       "No Majority")) +
+  theme_bw()
 ```
 
 This graph is particularly interesting. For one thing, I didn't realize that the Black community was so concentrated in Essex county, to the exclusion of other counties. (For one thing, Paterson and Passaic, in Passaic County, have large Black populations, but apparently not many majority tracts.) More damning is that nearly all majority-home-owner districts are majority-white.
@@ -206,8 +209,9 @@ ggplot(filter(NNJ_tracts,pct_rental<0.5),aes(x = reorder(county, -1*pct_rental),
                        labels = c("Hispanic", "Non-Hispanic Asian",
                        "Non-Hispanic Black", "Non-Hispanic White",
                        "No Majority"),
-                     values = c("darkorange2","olivedrab3","green","white","hotpink")) +
-  ggtitle("Majority Homeowner, Majority Non-White")
+                     values = c(hue_pal()(5)[[1]],hue_pal()(5)[[2]],hue_pal()(5)[[3]],"lightgray",hue_pal()(5)[[5]])) +
+  ggtitle("Majority Homeowner, Majority Non-White") +
+  theme_bw()
 ```
 
 The point of this plot is to highlight majority-homeowner, majority-minority tracts, against the background of all majority-homeowner tracts. I'm not sure if it's worth including the majority-rental tracts or not - but also not certain how to include those either.
